@@ -617,8 +617,9 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        -- gopls = {},
-        -- pyright = {},
+        gopls = {}, -- after `brew install gopls`
+        pyright = {}, -- after `brew install pyright`
+        terraformls = {}, -- after `brew install terraformls`
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
